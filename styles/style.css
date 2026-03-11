@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    overflow: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(51, 39, 26);
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: rgb(141, 123, 100);
+    font-weight: 600;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(141, 123, 100);
+    transition: all 300ms;
+}
+
+nav ul li a:hover{
+    color: rgb(51, 39, 26);
+}
+
+nav ul{
+    padding: 0;
+}
+
+#activeLink{
+    color: rgb(104, 89, 69);
+    text-decoration: underline;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    background-color:  rgb(255, 246, 235);
+}
+
+section{
+    padding-left: 10px;
+}
+
+header{
+    padding: 10px;
+    padding-left: 20px;
+    background-color: bisque;
+}
