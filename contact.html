@@ -25,7 +25,30 @@
             </nav>
         </header>
         <section>
-            i do things and stuff
+           <h3>Please fill out the form below to get in contact with me!</h3>
+           <form action="http://foo.com" method="get">
+                <label for="first_name">First Name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+
+                <label for="last_name">Last Name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="youremail@email.com"><br>
+
+                <label for="reason">Reason for contact:</label><br>
+                <input type="radio" name="reason" id="reason" value="question" checked>Question<br>
+                <input type="radio" name="reason" id="reason" value="idea">Idea<br>
+                <input type="radio" name="reason" id="reason" value="bug">Site Bug<br>
+                <input type="radio" name="reason" id="reason" value="other">Other<br>
+
+                <label for="message">Your message</label><br>
+                <textarea cols="50" rows="10" id="message" name="message" placeholder="Your message" maxlength="150"></textarea><br>
+
+                <p class="smallText">Fields marked with <span class="required">*</span> are required</p>
+                <input type="submit" value="Submit"><br>
+                <input type="reset" name="reset" id="reset" value="Reset">
+           </form>
         </section>
     </main>
     <footer>

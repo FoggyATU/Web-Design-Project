@@ -100,3 +100,40 @@ footer p{
 .flexbox img:hover{
     transform: translate(0px,-10px);
 }
+
+form{
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+input[type="submit"], input[type="reset"]{
+    width: 200px;
+    margin-bottom: 10px;
+    background-color: var(--header-color);
+    transition: all 0.2s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    transform: scale(1.05);
+}
+
+label{
+    float: left;
+    text-align: left;
+    min-width: 100px;
+}
+
+.required{
+    color: rgb(239, 29, 29);
+    font-weight: 1000;
+}
+
+textarea{
+    resize: none;
+}
+
+.smallText{
+    color: var(--inactive-text-color);
+    font-size: small;
+    margin-top: -5px;
+}
