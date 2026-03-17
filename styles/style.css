@@ -61,8 +61,10 @@ main{
 
 section{
     padding-left: 10px;
+    padding-right: 10px;
     animation: fadeIn 0.3s ease-out;
     background-color:  var(--page-color);
+    text-align: justify;
 }
 
 header{
@@ -77,6 +79,11 @@ footer{
     bottom: 10px;
     position: fixed;
     width: 70%;
+    font-size: small;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 footer p{
@@ -89,16 +96,44 @@ footer p{
     flex-direction: row;
     justify-content: center;
     flex-flow: row wrap;
+    padding-bottom: 20px;
+}
+
+.rightSection img{
+    width: 250px;
+    display:inline;
+    padding: 30px;
+}
+
+.rightSection aside{
+    float: right;
+    margin-top: 15px;
+    padding-right: 30px;
+    width: 60%;
+}
+
+.leftSection img{
+    width: 250px;
+    display: inline;
+    padding: 30px;
+    float: right;
+}
+
+.leftSection aside{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 60%;
+    min-height: 320px;
 }
 
 .flexbox img{
     width: 200px;
-    padding: 20px;
+    margin: 20px;
     transition: all 200ms;
 }
 
 .flexbox img:hover{
-    transform: translate(0px,-10px);
+    transform: translate(0px,-10px) rotate(2deg);
 }
 
 form{
