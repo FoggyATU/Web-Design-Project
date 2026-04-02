@@ -75,7 +75,12 @@ section{
     padding-right: 10px;
     animation: fadeIn 0.3s ease-out;
     background-color:  var(--page-color);
-    text-align: justify;}
+    text-align: justify;
+}
+
+article{
+    animation: fadeIn 0.3s ease-out;
+}
 
 header{
     padding: 10px;
@@ -143,14 +148,6 @@ footer p{
     margin-left: 20px;
 }
 
-.artistInfo iframe{
-    display: block;
-    margin: 1%;
-    padding: 0;
-    width: auto;
-    height: 100px;
-}
-
 form{
     margin-left: 20px;
     padding-bottom: 20px;
@@ -186,4 +183,35 @@ textarea{
     color: var(--inactive-text-color);
     font-size: small;
     margin-top: -5px;
+}
+
+.imageWithMap{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.imageGallery{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.imageGallery img{
+    max-width: 200px;
+    transition: ease-in-out 0.2s;
+    border: 3px solid var(--header-color);
+}
+
+.imageGallery img:hover{
+    transform: scale(2.0);
+    z-index: 1;
 }
