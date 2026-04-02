@@ -57,6 +57,15 @@ nav ul{
     text-decoration: underline;
 }
 
+#logo{
+    width: 100px;
+    float: right;
+}
+
+header h1{
+  display: inline;
+}
+
 main{
     background-color:  var(--page-color);
 }
@@ -66,8 +75,7 @@ section{
     padding-right: 10px;
     animation: fadeIn 0.3s ease-out;
     background-color:  var(--page-color);
-    text-align: justify;
-}
+    text-align: justify;}
 
 header{
     padding: 10px;
@@ -101,39 +109,6 @@ footer p{
     padding-bottom: 20px;
 }
 
-.rightSection img{
-    /*width: 250px;*/
-    width: 25%;
-    display:inline;
-    padding: 30px;
-}
-
-.rightSection aside{
-    float: right;
-    margin-top: 15px;
-    padding-right: 30px;
-    width: 60%;
-}
-
-iframe{
-    display: block;
-}
-
-.leftSection img{
-    /*width: 250px;*/
-    width: 25%;
-    display: inline;
-    padding: 30px;
-    float: right;
-}
-
-.leftSection aside{
-    margin-top: 15px;
-    margin-left: 30px;
-    width: 60%;
-    min-height: 320px;
-}
-
 .flexbox img{
     width: 200px;
     margin: 20px;
@@ -142,6 +117,38 @@ iframe{
 
 .flexbox img:hover{
     transform: translate(0px,-10px) rotate(2deg);
+}
+
+.artistInfo{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 10%;
+    text-align: justify;
+    max-width: 100%;
+}
+
+.artistInfo img{
+    height: 30%;
+    margin-left: 10px;
+}
+
+.artistInfo aside{
+    width:50%;
+    max-width: 100%;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.artistInfo iframe{
+    display: block;
+    margin: 1%;
+    padding: 0;
+    width: auto;
+    height: 100px;
 }
 
 form{
