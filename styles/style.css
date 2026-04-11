@@ -136,6 +136,7 @@ footer p{
     gap: 10%;
     text-align: justify;
     max-width: 100%;
+    margin-right: 10px;
 }
 
 .imageWithText img{
@@ -242,4 +243,8 @@ td,th{
     width: 50%;
     margin-left: 25%;
     padding: 0;
+}
+
+h2{
+    font-size: large;
 }

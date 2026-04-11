@@ -8,14 +8,14 @@
     <meta name="keywords" content="Contact, Email, Contact Me">
     <title>Contact</title>
     <link rel="icon" type="image/ico" sizes="16x16" href="assets/icons/favicon.ico">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
     <main>
         <header id="top">
             <h1>Contact</h1>
-            <img src="assets/images/compass.png" id="logo">
+            <img src="assets/images/compass.png" id="logo" alt="site logo">
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -27,7 +27,7 @@
             </nav>
         </header>
         <section>
-           <h3>Please fill out the form below to get in contact with me!</h3>
+           <h2>Please fill out the form below to get in contact with me!</h2>
            <form action="http://foo.com" method="get">
                 <label for="first_name">First Name:<span class="required">*</span></label>
                 <input type="text" name="first_name" id="first_name" autofocus required><br>
@@ -40,9 +40,9 @@
 
                 <label for="reason">Reason for contact:</label><br>
                 <input type="radio" name="reason" id="reason" value="question" checked>Question<br>
-                <input type="radio" name="reason" id="reason" value="idea">Idea<br>
-                <input type="radio" name="reason" id="reason" value="bug">Site Bug<br>
-                <input type="radio" name="reason" id="reason" value="other">Other<br>
+                <input type="radio" name="reason" value="idea">Idea<br>
+                <input type="radio" name="reason" value="bug">Site Bug<br>
+                <input type="radio" name="reason" value="other">Other<br>
 
                 <label for="message">Your message</label><br>
                 <textarea cols="50" rows="10" id="message" name="message" placeholder="Your message" maxlength="150"></textarea><br>
