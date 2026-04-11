@@ -68,6 +68,7 @@ header h1{
 
 main{
     background-color:  var(--page-color);
+    padding-bottom: 10px;
 }
 
 section{
@@ -89,12 +90,13 @@ header{
 }
 
 footer{
-    opacity: 0.5;
     text-align: center;
-    bottom: 10px;
-    position: fixed;
-    width: 70%;
+    width: 100%;
+    margin: auto;
     font-size: small;
+    background-color: var(--header-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer a{
@@ -115,7 +117,7 @@ footer p{
 }
 
 .flexbox img{
-    width: 200px;
+    max-width: 200px;
     margin: 20px;
     transition: all 200ms;
 }
@@ -124,7 +126,7 @@ footer p{
     transform: translate(0px,-10px) rotate(2deg);
 }
 
-.artistInfo{
+.imageWithText{
     padding-top: 20px;
     display: flex;
     flex-direction: row;
@@ -136,16 +138,23 @@ footer p{
     max-width: 100%;
 }
 
-.artistInfo img{
+.imageWithText img{
     height: 30%;
     margin-left: 10px;
 }
 
-.artistInfo aside{
+.imageWithText aside{
     width:50%;
     max-width: 100%;
     padding: 0;
     margin-left: 20px;
+}
+
+.newspaper{
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 4px solid var(--header-color);
+    padding: 10px;
 }
 
 form{
@@ -211,7 +220,26 @@ textarea{
     border: 3px solid var(--header-color);
 }
 
-.imageGallery img:hover{
+.imageWithMap .imageGallery img:hover{
     transform: scale(2.0);
     z-index: 1;
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+td,th{
+    text-align: center;
+    border: 5px solid var(--inactive-text-color);
+    padding: 10px;
+}
+
+.youtube_videos iframe{
+    width: 50%;
+    margin-left: 25%;
+    padding: 0;
 }
